@@ -18,6 +18,9 @@ function compute()
 
     var year = 2021 + parseInt(years)
 
+    // make the form larger so it is easier to see results
+    addHeightToForm()
+    
     // display result
     var result = document.getElementById("result")
     result.innerHTML = "<p>" + "If you deposit " + "<span>" + principal + "</span>"+ "," + "</p>" +
@@ -29,5 +32,10 @@ function compute()
 function displayRate() {
     var resultSpan = document.getElementById("rate-label")
     resultSpan.innerText = rate.value + " %"
+}
+
+function addHeightToForm() {
+    var maindiv = document.querySelector('.maindiv')
+    maindiv.classList.add("large")
 }
         
