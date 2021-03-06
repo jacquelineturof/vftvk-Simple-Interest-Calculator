@@ -53,4 +53,13 @@ button {
     outline: none;
 }
 
+footer {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
 
